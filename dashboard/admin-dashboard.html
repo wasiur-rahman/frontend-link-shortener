@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap  css -->
+    <link
+      rel="stylesheet"
+      href="/asset/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <!-- Fontwasome -->
+    <link rel="stylesheet" href="/asset/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="/asset/fontawesome/css/fontawesome.min.css" />
+    <!-- Responsive css -->
+    <link rel="stylesheet" href="/asset/css/responsive.css" />
+    <!-- Additional Css -->
+    <link rel="stylesheet" href="/asset/css/common.css" />
+    <link rel="stylesheet" href="/asset/css/margin-padding.css" />
+    <!-- Main css -->
+    <link rel="stylesheet" href="/asset/css/style.css" type="text/css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2 th-p-0 th-bg-white shadow">
+          <div class="ad-sidebar">
+            <div class="ad-dashboard-logo th-p-10">
+              <img src="/asset/image/logo.svg" alt="" />
+            </div>
+            <h3 class="ps-3 th-my-10">Menu</h3>
+            <div class="th-mt-10">
+              <ul class="th-p-0 nav d-flex flex-column">
+                <li class="nav-item th-mt-10">
+                  <a class="nav-link d-flex gap-3 active" href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current width-4 height-4 mr-3"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        d="M0,2V6A2,2,0,0,0,2,8H6A2,2,0,0,0,8,6V2A2,2,0,0,0,6,0H2A2,2,0,0,0,0,2ZM6,6H2V2H6ZM0,12v4a2,2,0,0,0,2,2H6a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H2A2,2,0,0,0,0,12Zm6,4H2V12H6ZM10,2V6a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2H12A2,2,0,0,0,10,2Zm6,4H12V2h4Zm-6,6v4a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H12A2,2,0,0,0,10,12Zm6,4H12V12h4Z"
+                        style="fill-rule: evenodd"
+                      ></path>
+                    </svg>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="nav-item th-mt-10">
+                  <a class="nav-link d-flex gap-3" href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current width-4 height-4 mr-3"
+                      viewBox="0 0 20 10"
+                    >
+                      <path
+                        d="M1.9,5A3.1,3.1,0,0,1,5,1.9H9V0H5A5,5,0,0,0,5,10H9V8.1H5A3.1,3.1,0,0,1,1.9,5ZM6,6h8V4H6Zm9-6H11V1.9h4a3.1,3.1,0,1,1,0,6.2H11V10h4A5,5,0,0,0,15,0Z"
+                      ></path>
+                    </svg>
+                    <span>Links</span>
+                  </a>
+                </li>
+                <li class="nav-item th-mt-10">
+                  <a class="nav-link d-flex gap-3" href="">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current width-4 height-4 mr-3"
+                      viewBox="0 0 20 18"
+                    >
+                      <path
+                        d="M4,12a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-2a4,4,0,1,0,4,4A4,4,0,0,0,4,10Zm6-8A2,2,0,1,1,8,4a2,2,0,0,1,2-2m0-2a4,4,0,1,0,4,4A4,4,0,0,0,10,0Zm6,12a2,2,0,1,1-2,2,2,2,0,0,1,2-2m0-2a4,4,0,1,0,4,4A4,4,0,0,0,16,10Z"
+                      ></path>
+                    </svg>
+                    <span>Spaces</span>
+                  </a>
+                </li>
+                <li class="nav-item th-mt-10">
+                  <a class="nav-link d-flex gap-3" href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current width-4 height-4 mr-3"
+                      viewBox="0 0 157.67 143.33"
+                    >
+                      <path
+                        d="M78.83,0a71.63,71.63,0,0,0-62,35.83H34.36A57.54,57.54,0,0,1,59,17.93a94.88,94.88,0,0,0-5.42,17.9H68.35c3.43-14.17,8.24-21.5,10.48-21.5s7,7.33,10.49,21.5h14.74a95.62,95.62,0,0,0-5.42-17.9,57.56,57.56,0,0,1,24.66,17.9h17.5A71.65,71.65,0,0,0,78.83,0ZM0,50.17l8.9,43h9.38l6.09-24.88,6.07,24.88h9.34l8.9-43H37.9L34.06,74.28,28.33,50.17h-8L14.61,74.33l-3.8-24.16Zm54.49,0,8.9,43h9.38l6.09-24.88,6.08,24.88h9.33l8.9-43H92.41L88.55,74.28,82.84,50.17h-8L69.12,74.33,65.3,50.17Zm54.49,0,8.91,43h9.37l6.09-24.88,6.08,24.88h9.33l8.91-43H146.89L143,74.28l-5.73-24.11h-8L123.6,74.33l-3.81-24.16ZM16.87,107.5a71.5,71.5,0,0,0,123.93,0H123.3a57.42,57.42,0,0,1-24.66,17.9,94.68,94.68,0,0,0,5.4-17.9H89.3C85.87,121.67,81.06,129,78.82,129s-7-7.33-10.47-21.5H53.61A95.39,95.39,0,0,0,59,125.4a57.51,57.51,0,0,1-24.67-17.9Z"
+                      ></path>
+                    </svg>
+                    <span>Domains</span></a
+                  >
+                </li>
+                <li class="nav-item th-mt-10">
+                  <a class="nav-link d-flex gap-3" href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current width-4 height-4 mr-3"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        d="M2,12H0v4a2,2,0,0,0,2,2H6V16H2ZM2,2H6V0H2A2,2,0,0,0,0,2V6H2ZM16,0H12V2h4V6h2V2A2,2,0,0,0,16,0Zm0,16H12v2h4a2,2,0,0,0,2-2V12H16ZM9,6a3,3,0,1,0,3,3A3,3,0,0,0,9,6Z"
+                      ></path>
+                    </svg>
+                    <span>Pixels</span></a
+                  >
+                </li>
+                <li class="nav-item th-mt-10">
+                  <a class="nav-link d-flex gap-3" href=""
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current width-4 height-4 mr-3"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        d="M2,12H0v4a2,2,0,0,0,2,2H6V16H2ZM2,2H6V0H2A2,2,0,0,0,0,2V6H2ZM16,0H12V2h4V6h2V2A2,2,0,0,0,16,0Zm0,16H12v2h4a2,2,0,0,0,2-2V12H16ZM9,6a3,3,0,1,0,3,3A3,3,0,0,0,9,6Z"
+                      ></path>
+                    </svg>
+                    <span>user</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-10 th-bg-white-light">
+          <div class="top-section">
+            <div class="row th-bg-white">
+              <div class="col-md-8">
+                <div class="d-flex">
+                  <img
+                    src="../asset/image/profile-image.png"
+                    class="rounded-circle th-p-10"
+                    alt=""
+                  />
+                  <div class="d-flex justify-content-center flex-column gap-2">
+                    <h4 class="fw-bold">Md Wasiur</h4>
+                    <div class="package-name th-color-black-light">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="fill-current"
+                        viewBox="0 0 18 18"
+                      >
+                        <path
+                          d="M2.75,0a1,1,0,0,0-.86.5L.14,3.5A1,1,0,0,0,0,4V16a2,2,0,0,0,2,2H16a2,2,0,0,0,2-2V4a1,1,0,0,0-.14-.5L16.11.5a1,1,0,0,0-.86-.5Zm.57,2H8V4H2.16ZM10,2h4.68l1.16,2H10ZM2,6H16V16H2ZM6,8v2h6V8Z"
+                        ></path>
+                      </svg>
+                      <span class="th-color-black-light">Entertainment</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-md-4 d-flex justify-content-end align-items-center gap-3"
+              >
+                <button
+                  class="plan d-flex gap-2 justify-content-center align-items-center th-py-5 th-px-15 th-color-primary th-bg-white rounded"
+                >
+                  <span> </span>
+                  Plan
+                </button>
+                <button
+                  class="newlnk d-flex gap-2 justify-content-center align-items-center th-py-5 th-px-15 th-color-white th-bg-primary rounded"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="width-4 height-4 fill-current mr-2"
+                    viewBox="0 0 14 14"
+                  >
+                    <path
+                      d="M13,8H8v5a1,1,0,0,1-2,0V8H1A1,1,0,0,1,1,6H6V1A1,1,0,0,1,8,1V6h5a1,1,0,0,1,0,2Z"
+                    ></path></svg
+                  >New link
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- content -->
+          <div class="th-bg-white-light">
+            <h4 class="fw-bold th-pt-20">Overview</h4>
+            <div class="row row-cols-md-4 row-cols-sm-3 row-cols-1 th-mt-20">
+              <div class="col">
+                <div class="item">
+                  <div
+                    class="top th-bg-white th-px-15 th-py-30 d-flex justify-content-between"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current th-width-8 th-color-primary th-p-10 rounded th-bg-light-rbga"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        d="M0,2V6A2,2,0,0,0,2,8H6A2,2,0,0,0,8,6V2A2,2,0,0,0,6,0H2A2,2,0,0,0,0,2ZM6,6H2V2H6ZM0,12v4a2,2,0,0,0,2,2H6a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H2A2,2,0,0,0,0,12Zm6,4H2V12H6ZM10,2V6a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2H12A2,2,0,0,0,10,2Zm6,4H12V2h4Zm-6,6v4a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H12A2,2,0,0,0,10,12Zm6,4H12V12h4Z"
+                        style="fill-rule: evenodd"
+                      ></path>
+                    </svg>
+                    <span class="fs-4 fw-bold">11</span>
+                  </div>
+                  <div
+                    class="bottom th-bg-white-light-2 th-color-black-light th-p-15"
+                  >
+                    <span>
+                      Links
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="th-width-2 fill-current th-ml-10"
+                        viewBox="0 0 7.41 12"
+                      >
+                        <path
+                          d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="item">
+                  <div
+                    class="top th-bg-white th-px-15 th-py-30 d-flex justify-content-between"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current th-width-8 th-color-primary th-p-10 rounded th-bg-light-rbga"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        d="M0,2V6A2,2,0,0,0,2,8H6A2,2,0,0,0,8,6V2A2,2,0,0,0,6,0H2A2,2,0,0,0,0,2ZM6,6H2V2H6ZM0,12v4a2,2,0,0,0,2,2H6a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H2A2,2,0,0,0,0,12Zm6,4H2V12H6ZM10,2V6a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2H12A2,2,0,0,0,10,2Zm6,4H12V2h4Zm-6,6v4a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H12A2,2,0,0,0,10,12Zm6,4H12V12h4Z"
+                        style="fill-rule: evenodd"
+                      ></path>
+                    </svg>
+                    <span class="fs-4 fw-bold">11</span>
+                  </div>
+                  <div
+                    class="bottom th-bg-white-light-2 th-color-black-light th-p-15"
+                  >
+                    <span>
+                      Links
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="th-width-2 fill-current th-ml-10"
+                        viewBox="0 0 7.41 12"
+                      >
+                        <path
+                          d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- item three -->
+              <div class="col">
+                <div class="item">
+                  <div
+                    class="top th-bg-white th-px-15 th-py-30 d-flex justify-content-between"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current th-width-8 th-color-primary th-p-10 rounded th-bg-light-rbga"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        d="M0,2V6A2,2,0,0,0,2,8H6A2,2,0,0,0,8,6V2A2,2,0,0,0,6,0H2A2,2,0,0,0,0,2ZM6,6H2V2H6ZM0,12v4a2,2,0,0,0,2,2H6a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H2A2,2,0,0,0,0,12Zm6,4H2V12H6ZM10,2V6a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2H12A2,2,0,0,0,10,2Zm6,4H12V2h4Zm-6,6v4a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H12A2,2,0,0,0,10,12Zm6,4H12V12h4Z"
+                        style="fill-rule: evenodd"
+                      ></path>
+                    </svg>
+                    <span class="fs-4 fw-bold">11</span>
+                  </div>
+                  <div
+                    class="bottom th-bg-white-light-2 th-color-black-light th-p-15"
+                  >
+                    <span>
+                      Links
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="th-width-2 fill-current th-ml-10"
+                        viewBox="0 0 7.41 12"
+                      >
+                        <path
+                          d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <!-- item four -->
+              <div class="col">
+                <div class="item">
+                  <div
+                    class="top th-bg-white th-px-15 d-flex justify-content-between"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="fill-current th-width-8 th-color-primary th-p-10 rounded th-bg-light-rbga"
+                      viewBox="0 0 18 18"
+                    >
+                      <path
+                        d="M0,2V6A2,2,0,0,0,2,8H6A2,2,0,0,0,8,6V2A2,2,0,0,0,6,0H2A2,2,0,0,0,0,2ZM6,6H2V2H6ZM0,12v4a2,2,0,0,0,2,2H6a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H2A2,2,0,0,0,0,12Zm6,4H2V12H6ZM10,2V6a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V2a2,2,0,0,0-2-2H12A2,2,0,0,0,10,2Zm6,4H12V2h4Zm-6,6v4a2,2,0,0,0,2,2h4a2,2,0,0,0,2-2V12a2,2,0,0,0-2-2H12A2,2,0,0,0,10,12Zm6,4H12V12h4Z"
+                        style="fill-rule: evenodd"
+                      ></path>
+                    </svg>
+                    <span class="fs-4 fw-bold">11</span>
+                  </div>
+                  <div
+                    class="bottom th-bg-white-light-2 th-color-black-light th-p-15"
+                  >
+                    <span>
+                      Links
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="th-width-2 fill-current th-ml-10"
+                        viewBox="0 0 7.41 12"
+                      >
+                        <path
+                          d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"
+                        ></path>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Activity -->
+            <div class="row row-cols-md-2 row-cols-sm-1 th-mt-20">
+              <div class="col">
+                <div class="th-bg-white">
+                  <div class="border-bottom th-bg-white th-p-15">
+                    <p>Latest Link</p>
+                  </div>
+                  <!-- link list -->
+                  <div
+                    class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                  >
+                    <div class="right">
+                      <div class="link-icon-box">
+                        <div class="d-flex gap-3">
+                          <div class="link-icon d-flex align-items-center">
+                            <img
+                              src="../asset/image/bing.svg"
+                              class="th-width-6"
+                              alt=""
+                            />
+                          </div>
+                          <div class="d-flex flex-column">
+                            <span class="th-color-primary">cut.ly/efdge</span>
+                            <span class="th-color-black-light"
+                              >Consequat - Elit Ornare</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="left d-flex align-items-center th-color-primary gap-3"
+                    >
+                      <div class="link-direction link-icon">
+                        <a href=""
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M2,0A2,2,0,0,0,0,2V16H2V2H16V0ZM6,4A2,2,0,0,0,4,6V18a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2ZM6,6H18V18H6Zm8,1a3,3,0,0,0-2.12.87L10.61,9.15,12,10.56,10.56,12,9.14,10.62,7.88,11.88a3,3,0,1,0,4.24,4.24l1.26-1.26L12,13.44,13.46,12,12,10.54l1.25-1.25a1,1,0,0,1,1.42,1.42L13.46,12l1.42,1.41,1.24-1.24A3,3,0,0,0,14,7Zm-3.46,5L12,13.46l-1.25,1.25a1,1,0,0,1-1.42-1.42Z"
+                            ></path></svg
+                        ></a>
+                      </div>
+                      <div class="link-setting link-icon">
+                        <a href="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 16 4"
+                          >
+                            <path
+                              d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Link Two -->
+                  <div
+                    class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                  >
+                    <div class="right">
+                      <div class="link-icon-box">
+                        <div class="d-flex gap-3">
+                          <div class="link-icon d-flex align-items-center">
+                            <img
+                              src="../asset/image/bing.svg"
+                              class="th-width-6"
+                              alt=""
+                            />
+                          </div>
+                          <div class="d-flex flex-column">
+                            <span class="th-color-primary">cut.ly/efdge</span>
+                            <span class="th-color-black-light"
+                              >Consequat - Elit Ornare</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="left d-flex align-items-center th-color-primary gap-3"
+                    >
+                      <div class="link-direction link-icon">
+                        <a href=""
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M2,0A2,2,0,0,0,0,2V16H2V2H16V0ZM6,4A2,2,0,0,0,4,6V18a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2ZM6,6H18V18H6Zm8,1a3,3,0,0,0-2.12.87L10.61,9.15,12,10.56,10.56,12,9.14,10.62,7.88,11.88a3,3,0,1,0,4.24,4.24l1.26-1.26L12,13.44,13.46,12,12,10.54l1.25-1.25a1,1,0,0,1,1.42,1.42L13.46,12l1.42,1.41,1.24-1.24A3,3,0,0,0,14,7Zm-3.46,5L12,13.46l-1.25,1.25a1,1,0,0,1-1.42-1.42Z"
+                            ></path></svg
+                        ></a>
+                      </div>
+                      <div class="link-setting link-icon">
+                        <a href="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 16 4"
+                          >
+                            <path
+                              d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Link Three -->
+                  <div
+                    class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                  >
+                    <div class="right">
+                      <div class="link-icon-box">
+                        <div class="d-flex gap-3">
+                          <div class="link-icon d-flex align-items-center">
+                            <img
+                              src="../asset/image/bing.svg"
+                              class="th-width-6"
+                              alt=""
+                            />
+                          </div>
+                          <div class="d-flex flex-column">
+                            <span class="th-color-primary">cut.ly/efdge</span>
+                            <span class="th-color-black-light"
+                              >Consequat - Elit Ornare</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="left d-flex align-items-center th-color-primary gap-3"
+                    >
+                      <div class="link-direction link-icon">
+                        <a href=""
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M2,0A2,2,0,0,0,0,2V16H2V2H16V0ZM6,4A2,2,0,0,0,4,6V18a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2ZM6,6H18V18H6Zm8,1a3,3,0,0,0-2.12.87L10.61,9.15,12,10.56,10.56,12,9.14,10.62,7.88,11.88a3,3,0,1,0,4.24,4.24l1.26-1.26L12,13.44,13.46,12,12,10.54l1.25-1.25a1,1,0,0,1,1.42,1.42L13.46,12l1.42,1.41,1.24-1.24A3,3,0,0,0,14,7Zm-3.46,5L12,13.46l-1.25,1.25a1,1,0,0,1-1.42-1.42Z"
+                            ></path></svg
+                        ></a>
+                      </div>
+                      <div class="link-setting link-icon">
+                        <a href="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 16 4"
+                          >
+                            <path
+                              d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Link Four -->
+                  <div
+                    class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                  >
+                    <div class="right">
+                      <div class="link-icon-box">
+                        <div class="d-flex gap-3">
+                          <div class="link-icon d-flex align-items-center">
+                            <img
+                              src="../asset/image/bing.svg"
+                              class="th-width-6"
+                              alt=""
+                            />
+                          </div>
+                          <div class="d-flex flex-column">
+                            <span class="th-color-primary">cut.ly/efdge</span>
+                            <span class="th-color-black-light"
+                              >Consequat - Elit Ornare</span
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="left d-flex align-items-center th-color-primary gap-3"
+                    >
+                      <div class="link-direction link-icon">
+                        <a href=""
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 20 20"
+                          >
+                            <path
+                              d="M2,0A2,2,0,0,0,0,2V16H2V2H16V0ZM6,4A2,2,0,0,0,4,6V18a2,2,0,0,0,2,2H18a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2ZM6,6H18V18H6Zm8,1a3,3,0,0,0-2.12.87L10.61,9.15,12,10.56,10.56,12,9.14,10.62,7.88,11.88a3,3,0,1,0,4.24,4.24l1.26-1.26L12,13.44,13.46,12,12,10.54l1.25-1.25a1,1,0,0,1,1.42,1.42L13.46,12l1.42,1.41,1.24-1.24A3,3,0,0,0,14,7Zm-3.46,5L12,13.46l-1.25,1.25a1,1,0,0,1-1.42-1.42Z"
+                            ></path></svg
+                        ></a>
+                      </div>
+                      <div class="link-setting link-icon">
+                        <a href="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-4 height-4"
+                            viewBox="0 0 16 4"
+                          >
+                            <path
+                              d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center th-bg-white-light-2 th-py-10 rounded-3">
+                  View all
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="th-width-2 fill-current th-ml-10"
+                      viewBox="0 0 7.41 12"
+                    >
+                      <path
+                        d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"
+                      ></path></svg
+                  ></span>
+                </div>
+              </div>
+              <div class="col">
+                <div class="border-bottom th-bg-white">
+                  <div class="th-bg-white">
+                    <div class="border-bottom th-bg-white th-p-15">
+                      <p>Latest Link</p>
+                    </div>
+                    <!-- link list -->
+                    <div
+                      class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                    >
+                      <div class="right">
+                        <div class="link-icon-box">
+                          <div class="d-flex gap-3">
+                            <div class="link-icon d-flex align-items-center">
+                              <img
+                                src="../asset/image/bing.svg"
+                                class="th-width-6"
+                                alt=""
+                              />
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="th-color-primary">cut.ly/efdge</span>
+                              <span class="th-color-black-light"
+                                >Consequat - Elit Ornare</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="left d-flex align-items-center th-color-primary gap-3"
+                      >
+                        <div class="link-direction link-icon">
+                          <a href=""
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 200 200"
+                            >
+                              <rect
+                                y="60"
+                                width="43"
+                                height="140"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="80"
+                                width="40"
+                                height="200"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="160"
+                                y="114"
+                                width="40"
+                                height="86"
+                                rx="15"
+                              ></rect></svg
+                          ></a>
+                        </div>
+                        <div class="link-setting link-icon">
+                          <a href="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 16 4"
+                            >
+                              <path
+                                d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Link Two -->
+                    <div
+                      class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                    >
+                      <div class="right">
+                        <div class="link-icon-box">
+                          <div class="d-flex gap-3">
+                            <div class="link-icon d-flex align-items-center">
+                              <img
+                                src="../asset/image/bing.svg"
+                                class="th-width-6"
+                                alt=""
+                              />
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="th-color-primary">cut.ly/efdge</span>
+                              <span class="th-color-black-light"
+                                >Consequat - Elit Ornare</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="left d-flex align-items-center th-color-primary gap-3"
+                      >
+                        <div class="link-direction link-icon">
+                          <a href=""
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 200 200"
+                            >
+                              <rect
+                                y="60"
+                                width="43"
+                                height="140"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="80"
+                                width="40"
+                                height="200"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="160"
+                                y="114"
+                                width="40"
+                                height="86"
+                                rx="15"
+                              ></rect></svg
+                          ></a>
+                        </div>
+                        <div class="link-setting link-icon">
+                          <a href="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 16 4"
+                            >
+                              <path
+                                d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Link Three -->
+                    <div
+                      class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                    >
+                      <div class="right">
+                        <div class="link-icon-box">
+                          <div class="d-flex gap-3">
+                            <div class="link-icon d-flex align-items-center">
+                              <img
+                                src="../asset/image/bing.svg"
+                                class="th-width-6"
+                                alt=""
+                              />
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="th-color-primary">cut.ly/efdge</span>
+                              <span class="th-color-black-light"
+                                >Consequat - Elit Ornare</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="left d-flex align-items-center th-color-primary gap-3"
+                      >
+                        <div class="link-direction link-icon">
+                          <a href=""
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 200 200"
+                            >
+                              <rect
+                                y="60"
+                                width="43"
+                                height="140"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="80"
+                                width="40"
+                                height="200"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="160"
+                                y="114"
+                                width="40"
+                                height="86"
+                                rx="15"
+                              ></rect></svg
+                          ></a>
+                        </div>
+                        <div class="link-setting link-icon">
+                          <a href="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 16 4"
+                            >
+                              <path
+                                d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Link Four -->
+                    <div
+                      class="item th-p-15 th-bg-white border-bottom d-flex justify-content-between"
+                    >
+                      <div class="right">
+                        <div class="link-icon-box">
+                          <div class="d-flex gap-3">
+                            <div class="link-icon d-flex align-items-center">
+                              <img
+                                src="../asset/image/bing.svg"
+                                class="th-width-6"
+                                alt=""
+                              />
+                            </div>
+                            <div class="d-flex flex-column">
+                              <span class="th-color-primary">cut.ly/efdge</span>
+                              <span class="th-color-black-light"
+                                >Consequat - Elit Ornare</span
+                              >
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="left d-flex align-items-center th-color-primary gap-3"
+                      >
+                        <div class="link-direction link-icon">
+                          <a href=""
+                            ><svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 200 200"
+                            >
+                              <rect
+                                y="60"
+                                width="43"
+                                height="140"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="80"
+                                width="40"
+                                height="200"
+                                rx="15"
+                              ></rect>
+                              <rect
+                                x="160"
+                                y="114"
+                                width="40"
+                                height="86"
+                                rx="15"
+                              ></rect></svg
+                          ></a>
+                        </div>
+                        <div class="link-setting link-icon">
+                          <a href="">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="fill-current width-4 height-4"
+                              viewBox="0 0 16 4"
+                            >
+                              <path
+                                d="M2,0A2,2,0,1,0,4,2,2,2,0,0,0,2,0ZM14,0a2,2,0,1,0,2,2A2,2,0,0,0,14,0ZM8,0a2,2,0,1,0,2,2A2,2,0,0,0,8,0Z"
+                              ></path>
+                            </svg>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center th-bg-white-light-2 th-py-10 rounded-3">
+                  View all
+                  <span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="th-width-2 fill-current th-ml-10"
+                      viewBox="0 0 7.41 12"
+                    >
+                      <path
+                        d="M0,1.41,4.58,6,0,10.59,1.41,12l6-6-6-6Z"
+                      ></path></svg
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <!-- More -->
+            <div></div>
+            <!-- Footer -->
+            <footer class="th-py-50">
+              <div class="container">
+                <div class="row row-cols-1 row-cols-md-2">
+                  <div class="col">
+                    <ul class="d-flex flex-wrap">
+                      <li>
+                        <a class="fs-6 th-color-primary th-px-15" href=""
+                          >Contact</a
+                        >
+                      </li>
+                      <li>
+                        <a class="fs-6 th-color-primary th-px-15" href=""
+                          >Terms</a
+                        >
+                      </li>
+                      <li>
+                        <a class="fs-6 th-color-primary th-px-15" href=""
+                          >Privacy</a
+                        >
+                      </li>
+                      <li>
+                        <a class="fs-6 th-color-primary th-px-15" href=""
+                          >Developers</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <ul
+                      class="d-flex justify-content-md-end justify-content-sm-center"
+                    >
+                      <li>
+                        <a class="fs-5 th-color-primary th-px-15" href=""
+                          ><path
+                            d="M41.9,5.5a5.69,5.69,0,0,0-4.5-4.3A88.93,88.93,0,0,0,21.4,0,90.2,90.2,0,0,0,5.3,1.2,5.55,5.55,0,0,0,.8,5.5,65.9,65.9,0,0,0,0,16,54.4,54.4,0,0,0,.9,26.5a5.69,5.69,0,0,0,4.5,4.3A91.89,91.89,0,0,0,21.5,32a91.89,91.89,0,0,0,16.1-1.2,5.55,5.55,0,0,0,4.5-4.3,76.19,76.19,0,0,0,1-10.5A69.63,69.63,0,0,0,41.9,5.5ZM16,23V9l12.2,7Z"
+                          ></path
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="fs-5 th-color-primary th-px-15" href=""
+                          ><svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-5 height-5"
+                            viewBox="0 0 43.1 32"
+                          >
+                            <path
+                              d="M41.9,5.5a5.69,5.69,0,0,0-4.5-4.3A88.93,88.93,0,0,0,21.4,0,90.2,90.2,0,0,0,5.3,1.2,5.55,5.55,0,0,0,.8,5.5,65.9,65.9,0,0,0,0,16,54.4,54.4,0,0,0,.9,26.5a5.69,5.69,0,0,0,4.5,4.3A91.89,91.89,0,0,0,21.5,32a91.89,91.89,0,0,0,16.1-1.2,5.55,5.55,0,0,0,4.5-4.3,76.19,76.19,0,0,0,1-10.5A69.63,69.63,0,0,0,41.9,5.5ZM16,23V9l12.2,7Z"
+                            ></path></svg
+                        ></a>
+                      </li>
+                      <li>
+                        <a class="fs-5 th-color-primary th-px-15" href="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-5 height-5"
+                            viewBox="0 0 21.57 19.5"
+                          >
+                            <path
+                              d="m16.99,0h3.31l-7.23,8.26,8.5,11.24h-6.66l-5.21-6.82-5.97,6.82H.43l7.73-8.84L0,0h6.83l4.71,6.23L16.99,0Zm-1.16,17.52h1.83L5.83,1.88h-1.97l11.97,15.64Z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fs-5 th-color-primary th-px-15" href="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-5 height-5"
+                            viewBox="0 0 18 18"
+                          >
+                            <path
+                              d="M5,0A5,5,0,0,0,0,5v8a5,5,0,0,0,5,5h8a5,5,0,0,0,5-5V5a5,5,0,0,0-5-5ZM5,2h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2Zm9,1a1,1,0,1,0,1,1A1,1,0,0,0,14,3ZM9,4a5,5,0,1,0,5,5A5,5,0,0,0,9,4ZM9,6A3,3,0,1,1,6,9,3,3,0,0,1,9,6Z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="fs-5 th-color-primary th-px-15" href="">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="fill-current width-5 height-5"
+                            viewBox="0 0 18 18"
+                          >
+                            <path
+                              d="M5,0A5,5,0,0,0,0,5v8a5,5,0,0,0,5,5h8a5,5,0,0,0,5-5V5a5,5,0,0,0-5-5ZM5,2h8a3,3,0,0,1,3,3v8a3,3,0,0,1-3,3H5a3,3,0,0,1-3-3V5A3,3,0,0,1,5,2Zm9,1a1,1,0,1,0,1,1A1,1,0,0,0,14,3ZM9,4a5,5,0,1,0,5,5A5,5,0,0,0,9,4ZM9,6A3,3,0,1,1,6,9,3,3,0,0,1,9,6Z"
+                            ></path>
+                          </svg>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <hr class="th-color-black-light" />
+                <div class="text-center th-color-black-light">
+                  &copy; 2024 All rights reserved by Wasiur Rahman.
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,3 +1,344 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+/* color varible */
+:root {
+  --primary-color: #7b60fb;
+  --primary-color-deep: #5c3bfa;
+  --primary-color-light: #e9e7f6;
+  --primary-shadow-color: #e0d4ff;
+  --color-light-rbga: rgba(123, 96, 251, 0.2);
+  --color-white: #fff;
+  --color-white-light: #f5f5f5;
+  --color-white-light-2: #fafafa;
+  --color-blue: #3684f9;
+  --color-blue-rbga: rgba(54, 132, 249, 0.2);
+  --color-purple: #7971ff;
+  --color-purple-rbga: rgba(121, 113, 255, 0.2);
+  --color-rose: #ff6e68;
+  --color-rose-rbga: rgba(255, 110, 104, 0.2);
+  --color-pink: #ff5c88;
+  --color-pink-rbga: rgba(255, 92, 136, 0.2);
+  --color-magenta: #bb61ff;
+  --color-magenta-rbga: rgba(187, 97, 255, 0.2);
+  --color-black: #000;
+  --color-black-light: #6c6c6c;
+  --color-parpal-light-rgba: rgba(67, 177, 230, 0.2);
+  --heading-font-family: "Kanit", sans-serif;
+  --heading-font-size: 3rem;
+  --heading-font-weight: 700;
+  --heading-font-weight-thin: 500;
+  --paragraph-font-family: "Catamaran", sans-serif;
+  --paragraph-font-size: 1rem;
+  --paragrahp-line-height: 1.1rem;
+  --paragraph-font-weight: 500;
+  --paragragh-font-color: var(--color-black);
+  --link-color: var(--secondary-color);
+}
+/*=============================
+    Common CSS start
+    ===============================*/
+body {
+  line-height: 1.5;
+  font-family: "Catamaran", sans-serif;
+  font-weight: 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3 {
+  font-weight: var(--heading-font-weight);
+}
+h4,
+h5,
+h6 {
+  font-weight: var(--heading-font-weight-thin);
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
+h6 {
+  font-size: 1.1rem;
+}
+body.scroll_hide {
+  overflow-y: hidden;
+}
+a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit;
+}
+a,
+span,
+small {
+  display: inline-block;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--hover-color);
+}
+a,
+button {
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -ms-transition: all 0.3s ease-out 0s;
+  -o-transition: all 03s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
+  text-decoration: none;
+  color: inherit;
+}
+a:focus,
+.btn:focus,
+button:focus {
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
+}
+p {
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  line-height: var(--body-line-height);
+  color: var(--paragraph-color);
+  margin: 0;
+  padding: 0;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+*::-moz-selection,
+::-moz-selection,
+::selection {
+  background-color: var(--primary-color);
+  text-shadow: none;
+}
+.section-title {
+  font-size: 3rem;
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  color: var(--color-black);
+}
+.section-sub-title {
+  font-size: 1.25rem;
+  font-family: var(--body-font-family);
+  color: var(--primary-bg-color);
+}
+.section-paragraph {
+  color: var(--color-black-light);
+}
+tbody,
+td,
+tfoot,
+th,
+thead,
+tr {
+  vertical-align: middle;
+}
+svg {
+  width: 1.25rem;
+}
+/* Width */
+.th-width-1 {
+  width: 0.25rem;
+}
+.th-width-2 {
+  width: 0.5rem;
+}
+.th-width-3 {
+  width: 0.75rem;
+}
+.th-width-4 {
+  width: 1rem;
+}
+.th-width-5 {
+  width: 1.25rem;
+}
+.th-width-6 {
+  width: 1.5rem;
+}
+.th-width-7 {
+  width: 1.75rem;
+}
+.th-width-8 {
+  width: 2rem;
+}
+.th-width-9 {
+  width: 2.25rem;
+}
+.th-width-10 {
+  width: 2.5rem;
+}
+.th-width-11 {
+  width: 2.75rem;
+}
+.th-width-12 {
+  width: 3rem;
+}
+.th-width-13 {
+  width: 3.25rem;
+}
+.th-width-14 {
+  width: 3.5rem;
+}
+.th-width-15 {
+  width: 3.75rem;
+}
+.th-width-16 {
+  width: 4rem;
+}
+.th-width-17 {
+  width: 4.25rem;
+}
+.th-width-18 {
+  width: 4.5rem;
+}
+.th-width-19 {
+  width: 4.75rem;
+}
+.th-width-20 {
+  width: 5rem;
+}
+/* height */
+.th-height-1 {
+  height: 0.25rem;
+}
+.th-height-2 {
+  height: 0.5rem;
+}
+.th-height-3 {
+  height: 0.75rem;
+}
+.th-height-4 {
+  height: 1rem;
+}
+.th-height-5 {
+  height: 1.25rem;
+}
+.th-height-6 {
+  height: 1.5rem;
+}
+.th-height-7 {
+  height: 1.75rem;
+}
+.th-height-8 {
+  height: 2rem;
+}
+.th-height-9 {
+  height: 2.25rem;
+}
+.th-height-10 {
+  height: 2.5rem;
+}
+.th-height-11 {
+  height: 2.75rem;
+}
+.th-height-12 {
+  height: 3rem;
+}
+.th-height-13 {
+  height: 3.25rem;
+}
+.th-height-14 {
+  height: 3.5rem;
+}
+.th-height-15 {
+  height: 3.75rem;
+}
+.th-height-16 {
+  height: 4rem;
+}
+.th-height-17 {
+  height: 4.25rem;
+}
+.th-height-18 {
+  height: 4.5rem;
+}
+.th-height-19 {
+  height: 4.75rem;
+}
+.th-height-20 {
+  height: 5rem;
+}
+/* Background color */
+
+.th-bg-primary {
+  background-color: var(--primary-color);
+}
+
+.th-bg-primary-deep {
+  background-color: var(--primary-color-deep);
+}
+
+.th-bg-primary-light {
+  background-color: var(--primary-color-light);
+}
+.th-bg-light-rbga {
+  background-color: var(--color-light-rbga);
+}
+.th-bg-white {
+  background-color: var(--color-white);
+}
+.th-bg-white-light {
+  background-color: var(--color-white-light);
+}
+.th-bg-white-light-2 {
+  background-color: var(--color-white-light-2);
+}
+
+/* color */
+.th-color-primary {
+  color: var(--primary-color);
+}
+.th-color-secondry {
+  color: var(--secondary-color);
+}
+.th-color-secondry-deep {
+  color: var(--secondary-color-deep);
+}
+.th-color-white {
+  color: var(--color-white);
+}
+.th-color-black {
+  color: var(--color-black);
+}
+.th-color-black-light {
+  color: var(--color-black-light);
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
 /*=============================
   Header Section
   ===============================*/
@@ -85,6 +426,12 @@ header {
 .feature .item-6 .card .card-icon svg {
   fill: var(--color-magenta);
 }
+/* button */
+.th-custom-btn {
+  background-color: var(--primary-color);
+  color: var(--color-white);
+}
+
 /*=============================
   Link Management Section
   ===============================*/
@@ -194,4 +541,23 @@ header {
 }
 .register button:hover {
   background-color: var(--primary-color-deep);
+}
+
+/* Dashboard */
+.ad-dashboard-logo {
+  width: 12rem;
+}
+.ad-dashboard-logo img {
+  width: 2rem;
+}
+.ad-sidebar {
+  height: 100vh;
+}
+.ad-sidebar ul li a {
+  color: var(--color-black-light);
+}
+.ad-sidebar ul li .active {
+  background-color: var(--color-light-rbga);
+  color: var(--primary-color);
+  border-right: 3px solid var(--primary-color);
 }
